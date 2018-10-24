@@ -1,0 +1,145 @@
+object FSSP: TFSSP
+  Left = 407
+  Height = 354
+  Top = 112
+  Width = 628
+  Caption = 'Schere Stein Papier'
+  ClientHeight = 354
+  ClientWidth = 628
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.6.4.0'
+  object BSpielen: TButton
+    Left = 256
+    Height = 40
+    Top = 216
+    Width = 96
+    Caption = 'Spielen'
+    OnClick = BSpielenClick
+    TabOrder = 0
+  end
+  object RGSpieler: TRadioGroup
+    Left = 16
+    Height = 105
+    Top = 56
+    Width = 185
+    AutoFill = True
+    Caption = 'Spieler'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 85
+    ClientWidth = 181
+    Items.Strings = (
+      '1. Schere'
+      '2. Stein'
+      '3. Papier'
+    )
+    ParentColor = False
+    TabOrder = 1
+  end
+  object RGComputer: TRadioGroup
+    Left = 392
+    Height = 105
+    Top = 56
+    Width = 185
+    AutoFill = True
+    Caption = 'Computer'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 85
+    ClientWidth = 181
+    Items.Strings = (
+      '1. Schere'
+      '2. Stein'
+      '3. Papier'
+    )
+    TabOrder = 2
+  end
+  object LEPunkteS: TLabeledEdit
+    Left = 56
+    Height = 23
+    Top = 216
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = LEPunkteS
+    EditLabel.AnchorSideRight.Control = LEPunkteS
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = LEPunkteS
+    EditLabel.Left = 56
+    EditLabel.Height = 15
+    EditLabel.Top = 198
+    EditLabel.Width = 80
+    EditLabel.Caption = 'Punkte'
+    EditLabel.ParentColor = False
+    TabOrder = 3
+  end
+  object LEPunkteC: TLabeledEdit
+    Left = 440
+    Height = 23
+    Top = 216
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = LEPunkteC
+    EditLabel.AnchorSideRight.Control = LEPunkteC
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = LEPunkteC
+    EditLabel.Left = 440
+    EditLabel.Height = 15
+    EditLabel.Top = 198
+    EditLabel.Width = 80
+    EditLabel.Caption = 'Computer'
+    EditLabel.ParentColor = False
+    TabOrder = 4
+  end
+  object LEGewinner: TLabeledEdit
+    Left = 256
+    Height = 23
+    Top = 160
+    Width = 96
+    EditLabel.AnchorSideLeft.Control = LEGewinner
+    EditLabel.AnchorSideRight.Control = LEGewinner
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = LEGewinner
+    EditLabel.Left = 256
+    EditLabel.Height = 15
+    EditLabel.Top = 142
+    EditLabel.Width = 96
+    EditLabel.Caption = 'Gewinner'
+    EditLabel.ParentColor = False
+    TabOrder = 5
+  end
+  object LEGesamtG: TLabeledEdit
+    Left = 256
+    Height = 23
+    Top = 64
+    Width = 96
+    EditLabel.AnchorSideLeft.Control = LEGesamtG
+    EditLabel.AnchorSideRight.Control = LEGesamtG
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = LEGesamtG
+    EditLabel.Left = 256
+    EditLabel.Height = 15
+    EditLabel.Top = 46
+    EditLabel.Width = 96
+    EditLabel.Caption = 'Gesamt Gewinner'
+    EditLabel.ParentColor = False
+    TabOrder = 6
+  end
+  object BNeu: TButton
+    Left = 256
+    Height = 25
+    Top = 296
+    Width = 96
+    Caption = 'Neues Spiel'
+    OnClick = BNeuClick
+    TabOrder = 7
+  end
+end

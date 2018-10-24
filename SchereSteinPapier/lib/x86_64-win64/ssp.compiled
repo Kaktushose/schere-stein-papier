@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.0.4\bin\x86_64-win64\fpc.exe" Date="1266912119"/>
+  <Params Value=" -MObjFPC -Scghi -CirotR -Os1 -g -gl -Xs -WG -l -vewnhibq &quot;-FiF:\Informatik\Informatik Q1\Objectpascal\SchereSteinPapier\lib\x86_64-win64&quot; -FuC:\lazarus\lcl\units\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64 -FuC:\lazarus\components\lazutils\lib\x86_64-win64 -FuC:\lazarus\packager\units\x86_64-win64 &quot;-FuF:\Informatik\Informatik Q1\Objectpascal\SchereSteinPapier\&quot; &quot;-FUF:\Informatik\Informatik Q1\Objectpascal\SchereSteinPapier\lib\x86_64-win64\&quot; -dLCL -dLCLwin32 ssp.lpr"/>
+</CONFIG>
